@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/requestHeaderConfig" mode="merge"/>
+    <filter root="/content/requestHeaderConfig" mode="merge"/>
+    <filter root="/content/dam/requestHeaderConfig" mode="merge">
+        <exclude pattern="/content/dam/requestHeaderConfig(/.*)?"/>
+        <include pattern="/content/dam/requestHeaderConfig/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/requestHeaderConfig/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/requestHeaderConfig" mode="merge"/>
+</workspaceFilter>
